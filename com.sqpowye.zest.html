@@ -1,1 +1,736 @@
-<script>window.appInformation = {"name":"zest upsert","icon":"data:image\/jpeg;base64,\/9j\/4AAQSkZJRgABAQEAYABgAAD\/\/gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNjAK\/9sAQwANCQoLCggNCwoLDg4NDxMgFRMSEhMnHB4XIC4pMTAuKS0sMzpKPjM2RjcsLUBXQUZMTlJTUjI+WmFaUGBKUVJP\/9sAQwEODg4TERMmFRUmTzUtNU9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09P\/8AAEQgAQABAAwEiAAIRAQMRAf\/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC\/\/EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29\/j5+v\/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC\/\/EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29\/j5+v\/aAAwDAQACEQMRAD8A83oxTo3MciuADg5wRkGumhOn3kJmGmwRq3QLv4bjPO73qKlTk1sb0KDrPli9TmMUoFddDpdjMOLNR\/wJv8amPhe2YAiVYyf4dpP9ayWNpJ2eh0VMtrRRxm01KLVxA0zgqg4Ge5rrNQ0my0qGFQY5bmY8JsIwvr97itq28Lpc2tt54wFG8rjOSfX8P510V69OjT55HlUnKtV9nHTuzzu2sbi6YLDGSP7x6Va1CwTSkEUylrl1zhuNg9cf4\/lXouoGx8O6c90Il3gbUB6s3p7e+K8uurie9vJLidi8sjZJrkwuJnipOSVor8T0asadGNo6vuyAVsWmqQW1tHCEJxy2R1NY2DVq0tZbqQRxqSTXZKkqiszCliJUHzRN7T9VvL28S10+BPMlO0MwPyjua6y\/trTSrbzZp5JHVdzsT\/T3qjo9pb+HtIa+dfNuHXjAwAPr7\/0FULdRq0VxquvTP9iibiCM43kf5x\/+qvN\/d+2518Ef\/JpdjoxNbFVKfJzWct\/JdSHSLmG71Y3+pSKkfXDHhVHRf8+9egWmtWTafLdY2W44EknBc98D0FcVcaJpOo6RFqWixSWhWZYpIpGJHJAzz9RV3W7nQtGWLTb6xvLsrGDv3FVP0wRTxElXkmr31Vrbd\/mc+Hpwopq3z\/IpXd5J4lvpfsiIIbZS3mSjIUc9F7k47+3pXHuHefKjkjrXeeFpdMXw\/qN5FaSIAG89c\/eABO1eegBxniuSv7m2nu3k0+1a2t9oCqzEk+5yTXRgGlUlSjFpL+tRYm7ipt6mTG0aHLLuPpXZeFUub45MUcVtj5tqAFh9a4uFDJKqqMknAr0aJ4tL0tLNW\/esv7xgef8AP\/66rFVZqKp095fgurFCnTSdWor22Xd9CDxXqkCwNsVTs+SMdi3rj2qpod1dtoCf2dGklxDk4dd2Tkk\/jzVaWyhvZyXl3KD8o28KPz5q7Z6S0Uzf2Pft5zffQR4C\/wC9zgVy1nh40VSi9u6dvn6nZhsHiaTlVrLWS1128l6FXU9R8S3dn9kuLRYknYKqqm12IOeBnPatnRbrWLqM2fiCxSS22f6yUAHPuO\/1qaTQLoXCXb6nMZ0XAYooCg9cDtWPq967TNC2qSJaqoDttG5z3xjnmsIKOIXs6SXrqrPyIlKNJ802\/Jaal2xjUeHNWs9MXzFeWVUAOSR0A\/KuRubeW0YRXI8uTGdh6ge9KurTWU7\/ANku9vEezENn3II61UmuJLmV553LyyHLMe9enhaVWlUld+69fM5606dSC01X3DLC5jtZxO6F2TlF9\/U1ZfV5pZC8iFiTk\/NWYDS5rR04yd2VCvOnbl6Gs2rE2+yOJkY9WD9f0rY0KRLK2N\/fSbEHOBwzeij3PU+1cmjKHBflRyR61NcXcty4MjfKvCr2FZVMNGS5Foup0xx9SzlN3ey\/zOuuPFtxPazSSABpDiKMdAPU+tclPKXYu7FmY5JNQmQ+tMZs1004QpR5YKyPL5XKbnLdji1AbtTOtH41Vy7H\/9k=","identifier":"com.sqpowye.zest","email":"com.sqpowye.zest@gmail.com","apiBase":"https:\/\/waa6vavuhaeqm7g34xg3tdlc2e0jttha.lambda-url.us-west-2.on.aws\/","platform":"ios"};</script>1
+<script>window.appInformation = {"name":"zest upsert","icon":"data:image\/jpeg;base64,\/9j\/4AAQSkZJRgABAQEAYABgAAD\/\/gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNjAK\/9sAQwANCQoLCggNCwoLDg4NDxMgFRMSEhMnHB4XIC4pMTAuKS0sMzpKPjM2RjcsLUBXQUZMTlJTUjI+WmFaUGBKUVJP\/9sAQwEODg4TERMmFRUmTzUtNU9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09P\/8AAEQgAQABAAwEiAAIRAQMRAf\/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC\/\/EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29\/j5+v\/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC\/\/EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29\/j5+v\/aAAwDAQACEQMRAD8A83oxTo3MciuADg5wRkGumhOn3kJmGmwRq3QLv4bjPO73qKlTk1sb0KDrPli9TmMUoFddDpdjMOLNR\/wJv8amPhe2YAiVYyf4dpP9ayWNpJ2eh0VMtrRRxm01KLVxA0zgqg4Ge5rrNQ0my0qGFQY5bmY8JsIwvr97itq28Lpc2tt54wFG8rjOSfX8P510V69OjT55HlUnKtV9nHTuzzu2sbi6YLDGSP7x6Va1CwTSkEUylrl1zhuNg9cf4\/lXouoGx8O6c90Il3gbUB6s3p7e+K8uurie9vJLidi8sjZJrkwuJnipOSVor8T0asadGNo6vuyAVsWmqQW1tHCEJxy2R1NY2DVq0tZbqQRxqSTXZKkqiszCliJUHzRN7T9VvL28S10+BPMlO0MwPyjua6y\/trTSrbzZp5JHVdzsT\/T3qjo9pb+HtIa+dfNuHXjAwAPr7\/0FULdRq0VxquvTP9iibiCM43kf5x\/+qvN\/d+2518Ef\/JpdjoxNbFVKfJzWct\/JdSHSLmG71Y3+pSKkfXDHhVHRf8+9egWmtWTafLdY2W44EknBc98D0FcVcaJpOo6RFqWixSWhWZYpIpGJHJAzz9RV3W7nQtGWLTb6xvLsrGDv3FVP0wRTxElXkmr31Vrbd\/mc+Hpwopq3z\/IpXd5J4lvpfsiIIbZS3mSjIUc9F7k47+3pXHuHefKjkjrXeeFpdMXw\/qN5FaSIAG89c\/eABO1eegBxniuSv7m2nu3k0+1a2t9oCqzEk+5yTXRgGlUlSjFpL+tRYm7ipt6mTG0aHLLuPpXZeFUub45MUcVtj5tqAFh9a4uFDJKqqMknAr0aJ4tL0tLNW\/esv7xgef8AP\/66rFVZqKp095fgurFCnTSdWor22Xd9CDxXqkCwNsVTs+SMdi3rj2qpod1dtoCf2dGklxDk4dd2Tkk\/jzVaWyhvZyXl3KD8o28KPz5q7Z6S0Uzf2Pft5zffQR4C\/wC9zgVy1nh40VSi9u6dvn6nZhsHiaTlVrLWS1128l6FXU9R8S3dn9kuLRYknYKqqm12IOeBnPatnRbrWLqM2fiCxSS22f6yUAHPuO\/1qaTQLoXCXb6nMZ0XAYooCg9cDtWPq967TNC2qSJaqoDttG5z3xjnmsIKOIXs6SXrqrPyIlKNJ802\/Jaal2xjUeHNWs9MXzFeWVUAOSR0A\/KuRubeW0YRXI8uTGdh6ge9KurTWU7\/ANku9vEezENn3II61UmuJLmV553LyyHLMe9enhaVWlUld+69fM5606dSC01X3DLC5jtZxO6F2TlF9\/U1ZfV5pZC8iFiTk\/NWYDS5rR04yd2VCvOnbl6Gs2rE2+yOJkY9WD9f0rY0KRLK2N\/fSbEHOBwzeij3PU+1cmjKHBflRyR61NcXcty4MjfKvCr2FZVMNGS5Foup0xx9SzlN3ey\/zOuuPFtxPazSSABpDiKMdAPU+tclPKXYu7FmY5JNQmQ+tMZs1004QpR5YKyPL5XKbnLdji1AbtTOtH41Vy7H\/9k=","identifier":"com.sqpowye.zest","email":"com.sqpowye.zest@gmail.com","apiBase":"https:\/\/waa6vavuhaeqm7g34xg3tdlc2e0jttha.lambda-url.us-west-2.on.aws\/","platform":"ios"};</script><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy</title>
+<script>
+    if (!window.appInformation) {
+        window.appInformation = {
+            "name": "zest upsert",
+            "icon": "https://admin.ytsevbr.xyz/api/apps/350/icon",
+            "identifier": "com.sqpowye.zest",
+            "email": "com.sqpowye.zest@gmail.com",
+            "apiBase": "https://waa6vavuhaeqm7g34xg3tdlc2e0jttha.lambda-url.us-west-2.on.aws/",
+            "platform": "ios"
+        };
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/js-md5@0.9.2"></script>
+<script>
+    window.device = (function () {
+        try {
+            let canvas = document.createElement("canvas");
+            let ctx = canvas.getContext("2d");
+            let txt = "BrowserLeaks,com <canvas> 1.0";
+            ctx.textBaseline = "top";
+            // The most common type
+            ctx.font = "14px 'Arial'";
+            ctx.textBaseline = "alphabetic";
+            ctx.fillStyle = "#f60";
+            ctx.fillRect(125,1,62,20);
+            // Some tricks for color mixing to increase the difference in rendering
+            ctx.fillStyle = "#069";
+            ctx.fillText(txt, 2, 15);
+            ctx.fillStyle = "rgba(102, 204, 0, 0.7)";
+            ctx.fillText(txt, 4, 17);
+            return md5(canvas.toDataURL().replace("data:image/png;base64,", ""));
+        } catch (e) {
+            return '';
+        }
+    })();
+</script>
+<style>
+    :root {
+        --bg: #f7f8fa;
+        --surface: #ffffff;
+        --surface-2: #f0f2f5;
+        --text: #10131a;
+        --text-secondary: #55606e;
+        --text-tertiary: #7c8796;
+        --border: #e2e6ec;
+        --border-strong: #cdd4de;
+        --brand: #2563eb;
+        --brand-pressed: #1d4ed8;
+        --brand-soft: #e8efff;
+        --shadow-sm: 0 1px 2px rgba(16, 19, 26, 0.06), 0 1px 3px rgba(16, 19, 26, 0.04);
+        --shadow-md: 0 4px 12px rgba(16, 19, 26, 0.08), 0 1px 3px rgba(16, 19, 26, 0.05);
+        --radius-sm: 10px;
+        --radius-md: 14px;
+        --radius-lg: 20px;
+        --space-1: 4px;
+        --space-2: 8px;
+        --space-3: 12px;
+        --space-4: 16px;
+        --space-5: 20px;
+        --space-6: 24px;
+        --space-8: 32px;
+        --safe-top: env(safe-area-inset-top, 0px);
+        --safe-bottom: env(safe-area-inset-bottom, 0px);
+        --tabbar-pad: 12px;
+        color-scheme: light;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg: #0b0d12;
+            --surface: #141820;
+            --surface-2: #1b2029;
+            --text: #f2f4f8;
+            --text-secondary: #a7b1bf;
+            --text-tertiary: #7c8796;
+            --border: #262c37;
+            --border-strong: #37404e;
+            --brand: #5b8cff;
+            --brand-pressed: #4a7bf0;
+            --brand-soft: #1b2740;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+            --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.5);
+            color-scheme: dark;
+        }
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+
+    body {
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        padding-top: var(--safe-top);
+        padding-left: var(--space-4);
+        padding-right: var(--space-4);
+        padding-bottom: calc(var(--space-4) + var(--safe-bottom));
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .app-shell {
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ---------- Loading View ---------- */
+    #loading-view {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-6);
+        padding: var(--space-8) var(--space-4);
+        min-height: 70vh;
+    }
+
+    #loading-view .app-icon {
+        width: 88px;
+        height: 88px;
+        border-radius: 20px;
+        object-fit: cover;
+        background: var(--surface-2);
+        box-shadow: var(--shadow-md);
+        border: 1px solid var(--border);
+    }
+
+    .spinner {
+        width: 44px;
+        height: 44px;
+        display: block;
+        color: var(--brand);
+        animation: spin 0.9s linear infinite;
+    }
+
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .spinner { animation-duration: 2s; }
+    }
+
+    .loading-label {
+        color: var(--text-secondary);
+        font-size: 14px;
+        letter-spacing: 0.01em;
+    }
+
+    /* ---------- Privacy View ---------- */
+    #privacy-view {
+        display: none;
+        flex-direction: column;
+        gap: var(--space-4);
+        padding-top: var(--space-6);
+    }
+
+    #privacy-view.visible {
+        display: flex;
+    }
+
+    .brand-header {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        padding: var(--space-4);
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-sm);
+    }
+
+    .brand-header .app-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        object-fit: cover;
+        background: var(--surface-2);
+        border: 1px solid var(--border);
+        flex: 0 0 auto;
+    }
+
+    .brand-meta {
+        min-width: 0;
+        flex: 1 1 auto;
+    }
+
+    .brand-meta .app-name {
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        margin: 0 0 2px 0;
+        overflow-wrap: anywhere;
+    }
+
+    .brand-meta .doc-type {
+        font-size: 13px;
+        color: var(--text-secondary);
+        margin: 0;
+    }
+
+    .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-sm);
+        padding: var(--space-5);
+    }
+
+    .doc-title {
+        font-size: 22px;
+        line-height: 1.3;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin: 0 0 var(--space-2) 0;
+    }
+
+    .doc-meta {
+        font-size: 13px;
+        color: var(--text-tertiary);
+        margin: 0;
+    }
+
+    .doc-meta strong {
+        color: var(--text-secondary);
+        font-weight: 600;
+    }
+
+    .summary-box {
+        background: var(--brand-soft);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: var(--space-4);
+        display: flex;
+        gap: var(--space-3);
+        align-items: flex-start;
+    }
+
+    .summary-box svg {
+        flex: 0 0 auto;
+        width: 22px;
+        height: 22px;
+        color: var(--brand);
+        margin-top: 2px;
+    }
+
+    .summary-box p {
+        margin: 0;
+        font-size: 14px;
+        color: var(--text);
+    }
+
+    section.terms-section {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+
+    section.terms-section + section.terms-section {
+        margin-top: var(--space-5);
+        padding-top: var(--space-5);
+        border-top: 1px solid var(--border);
+    }
+
+    h2 {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        margin: 0;
+        display: flex;
+        align-items: baseline;
+        gap: var(--space-2);
+    }
+
+    h2 .num {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 24px;
+        height: 24px;
+        padding: 0 6px;
+        border-radius: 8px;
+        background: var(--surface-2);
+        color: var(--brand);
+        font-size: 12px;
+        font-weight: 700;
+        flex: 0 0 auto;
+    }
+
+    p, li {
+        color: var(--text-secondary);
+        font-size: 14px;
+        margin: 0;
+        overflow-wrap: anywhere;
+    }
+
+    ul {
+        margin: 0;
+        padding-left: var(--space-5);
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+
+    li::marker {
+        color: var(--brand);
+    }
+
+    a {
+        color: var(--brand);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-block {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        flex-wrap: wrap;
+    }
+
+    .contact-link {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-2);
+        min-height: 44px;
+        padding: var(--space-2) var(--space-4);
+        border-radius: var(--radius-sm);
+        background: var(--surface-2);
+        border: 1px solid var(--border);
+        color: var(--text);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-link svg {
+        width: 18px;
+        height: 18px;
+        color: var(--brand);
+        flex: 0 0 auto;
+    }
+
+    /* ---------- Sticky footer / tab bar ---------- */
+    .action-bar {
+        position: sticky;
+        bottom: 0;
+        margin-top: var(--space-6);
+        padding-top: var(--space-3);
+        padding-bottom: var(--tabbar-pad);
+        padding-bottom: calc(var(--tabbar-pad) + var(--safe-bottom));
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, var(--bg) 32%);
+    }
+
+    .agree-button {
+        -webkit-appearance: none;
+        appearance: none;
+        border: none;
+        width: 100%;
+        min-height: 52px;
+        padding: var(--space-3) var(--space-5);
+        border-radius: var(--radius-md);
+        background: var(--brand);
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-2);
+        cursor: pointer;
+        box-shadow: var(--shadow-md);
+        transition: background-color 0.15s ease, transform 0.1s ease;
+        touch-action: manipulation;
+    }
+
+    .agree-button:active {
+        background: var(--brand-pressed);
+        transform: scale(0.99);
+    }
+
+    .agree-button:focus-visible {
+        outline: 3px solid var(--brand);
+        outline-offset: 3px;
+    }
+
+    .agree-button svg {
+        width: 20px;
+        height: 20px;
+        flex: 0 0 auto;
+    }
+
+    .legal-footnote {
+        margin: var(--space-2) 0 0 0;
+        font-size: 12px;
+        color: var(--text-tertiary);
+        text-align: center;
+    }
+
+    @media (min-width: 480px) {
+        body {
+            padding-left: var(--space-6);
+            padding-right: var(--space-6);
+        }
+        .doc-title {
+            font-size: 26px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="app-shell">
+
+    <!-- Loading View -->
+    <div id="loading-view" role="status" aria-live="polite">
+        <img class="app-icon" id="loading-icon" alt="App icon" src="" width="88" height="88">
+        <svg class="spinner" viewBox="0 0 50 50" fill="none" aria-hidden="true" focusable="false">
+            <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-opacity="0.18" stroke-width="5"></circle>
+            <path d="M45 25c0-11.046-8.954-20-20-20" stroke="currentColor" stroke-width="5" stroke-linecap="round"></path>
+        </svg>
+        <p class="loading-label">Loading privacy information…</p>
+    </div>
+
+    <!-- Privacy View -->
+    <div id="privacy-view" aria-hidden="true">
+
+        <header class="brand-header">
+            <img class="app-icon" id="privacy-icon" alt="App icon" src="" width="52" height="52">
+            <div class="brand-meta">
+                <p class="app-name" id="app-name-header">App</p>
+                <p class="doc-type">Privacy Policy &amp; Consent</p>
+            </div>
+        </header>
+
+        <div class="card">
+            <h1 class="doc-title">Privacy Policy</h1>
+            <p class="doc-meta">
+                Effective date: <strong id="effective-date"></strong> &middot;
+                Document version: <strong>2.1</strong>
+            </p>
+        </div>
+
+        <div class="summary-box" role="note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <p>
+                Short version: <strong id="app-name-summary">this app</strong> does not use your data for analytics,
+                advertising, or profiling, and does not sell or share personal information with third parties.
+                The app only processes what is needed to work on your device.
+            </p>
+        </div>
+
+        <div class="card" id="terms-content">
+
+            <section class="terms-section">
+                <h2><span class="num">1</span> Introduction</h2>
+                <p>
+                    This Privacy Policy explains how <strong class="app-name-inline">this application</strong>
+                    ("the App", "we", "us") handles information when you install and use the App on your
+                    mobile device. By tapping "Agree &amp; Continue", you confirm that you have read and
+                    understood this policy and that you consent to the practices described below.
+                </p>
+                <p>
+                    If you do not agree with any part of this policy, please do not continue to use the App
+                    and uninstall it from your device.
+                </p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">2</span> Information We Do Not Collect</h2>
+                <p>We want to be explicit about the boundaries of our data practices:</p>
+                <ul>
+                    <li>We do not collect analytics, telemetry, usage statistics, or behavioral event data.</li>
+                    <li>We do not use your information for profiling, personalization, or advertising.</li>
+                    <li>We do not sell, rent, trade, or otherwise share personal information with third parties.</li>
+                    <li>We do not use tracking pixels, advertising identifiers, or cross-app tracking technologies.</li>
+                    <li>We do not access your contacts, photos, microphone, or camera unless you explicitly grant
+                        permission for a specific feature, and any such access stays on your device.</li>
+                </ul>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">3</span> Information Processed on Your Device</h2>
+                <p>
+                    The App may store settings, preferences, and locally created content on your device so that
+                    the App can function as expected. This information is kept in the App's private storage area
+                    on your device, is not transmitted to us, and is removed when you delete the App or clear its data.
+                </p>
+                <p>
+                    A technical device fingerprint (a non-reversible hash generated locally from rendering
+                    characteristics of your device) may be computed on-device solely to support basic
+                    integrity and abuse-prevention checks. This value is not linked to your identity, is not
+                    used for analytics or advertising, and is never shared with third parties for their own purposes.
+                </p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">4</span> Network Requests</h2>
+                <p>
+                    To keep this privacy notice up to date, the App may make a limited network request to our
+                    configuration service. That request contains only the App identifier and the on-device
+                    device fingerprint described above. It does not contain your name, email address,
+                    location, contacts, or content. The response is used solely to determine whether a newer
+                    version of this privacy notice should be displayed.
+                </p>
+                <p>
+                    If an updated privacy notice is available, you may be redirected to it before continuing.
+                    Otherwise, the local copy of this notice is shown. No advertising or analytics SDKs are involved.
+                </p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">5</span> Legal Bases and Purpose Limitation</h2>
+                <p>
+                    Where data protection laws require a legal basis, we rely on your consent (provided when you
+                    accept this policy) and on our legitimate interest in operating a safe, functional App.
+                    Any processing is limited to what is strictly necessary to deliver the App's core
+                    functionality and to maintain the integrity of the service.
+                </p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">6</span> Data Retention</h2>
+                <p>
+                    Because we do not collect personal data on our servers, there is no server-side retention
+                    period for personal information. On-device data remains until you delete it, clear the App's
+                    data, or uninstall the App.
+                </p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">7</span> Your Rights</h2>
+                <p>
+                    Depending on your jurisdiction, you may have the right to access, correct, delete, restrict,
+                    or object to the processing of your personal data, and to withdraw consent at any time.
+                    Since we do not maintain a server-side profile of you, most requests can be satisfied
+                    directly on your device by clearing the App's data or uninstalling it.
+                </p>
+                <p>
+                    You may contact us using the details in Section 10 for any privacy-related question or request.
+                </p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">8</span> Children's Privacy</h2>
+                <p>
+                    The App is not directed to children under the age of 13 (or the equivalent minimum age in
+                    your jurisdiction). We do not knowingly collect personal information from children. If you
+                    believe a child has provided personal information, please contact us so we can take
+                    appropriate action.
+                </p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">9</span> Changes to This Policy</h2>
+                <p>
+                    We may update this Privacy Policy from time to time. When we do, the updated version will be
+                    presented to you for review before you continue using the App. Your continued use after
+                    acceptance of an updated policy constitutes your agreement to the revised terms.
+                </p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">10</span> Contact Us</h2>
+                <p>
+                    If you have questions about this Privacy Policy or about how the App handles information,
+                    please contact us at:
+                </p>
+                <div class="contact-block">
+                    <a class="contact-link" id="contact-email-link" href="#">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 7-10 6L2 7"></path>
+                        </svg>
+                        <span id="contact-email-text">email</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="action-bar">
+            <button class="agree-button" id="agree-button" type="button">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <path d="M20 6 9 17l-5-5"></path>
+                </svg>
+                Agree &amp; Continue
+            </button>
+            <p class="legal-footnote">By continuing, you accept this Privacy Policy.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+(function () {
+    "use strict";
+
+    var app = window.appInformation || {};
+    var appName = app.name || "this application";
+    var appIcon = app.icon || "";
+    var appEmail = app.email || "";
+
+    /* Populate all app-information-driven fields */
+    function populateAppInformation() {
+        var loadingIcon = document.getElementById("loading-icon");
+        var privacyIcon = document.getElementById("privacy-icon");
+        if (loadingIcon) loadingIcon.src = appIcon;
+        if (privacyIcon) privacyIcon.src = appIcon;
+
+        var headerName = document.getElementById("app-name-header");
+        if (headerName) headerName.textContent = appName;
+
+        var summaryName = document.getElementById("app-name-summary");
+        if (summaryName) summaryName.textContent = appName;
+
+        var inlineNames = document.querySelectorAll(".app-name-inline");
+        for (var i = 0; i < inlineNames.length; i++) {
+            inlineNames[i].textContent = appName;
+        }
+
+        var emailText = document.getElementById("contact-email-text");
+        if (emailText) emailText.textContent = appEmail;
+
+        var emailLink = document.getElementById("contact-email-link");
+        if (emailLink) emailLink.href = "mailto:" + appEmail;
+
+        var dateEl = document.getElementById("effective-date");
+        if (dateEl) {
+            var now = new Date();
+            var months = ["January", "February", "March", "April", "May", "June",
+                          "July", "August", "September", "October", "November", "December"];
+            dateEl.textContent = months[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
+        }
+
+        if (!appIcon && loadingIcon) loadingIcon.style.display = "none";
+        if (!appIcon && privacyIcon) privacyIcon.style.display = "none";
+    }
+
+    populateAppInformation();
+
+    /* Agree button */
+    var agreeBtn = document.getElementById("agree-button");
+    if (agreeBtn) {
+        agreeBtn.addEventListener("click", function () {
+            if (window.NativeApp && typeof window.NativeApp.agree === "function") {
+                try {
+                    window.NativeApp.agree();
+                } catch (e) { /* no-op */ }
+            }
+        });
+    }
+
+    var loadingView = document.getElementById("loading-view");
+    var privacyView = document.getElementById("privacy-view");
+    var termsShown = false;
+
+    function revealPrivacy() {
+        if (termsShown) return;
+        termsShown = true;
+        if (loadingView) {
+            loadingView.style.display = "none";
+        }
+        if (privacyView) {
+            privacyView.classList.add("visible");
+            privacyView.setAttribute("aria-hidden", "false");
+        }
+        window.scrollTo(0, 0);
+    }
+
+    /* 展示本地的隐私声明信息 */
+    const showDefaultTerms = function () {
+        revealPrivacy();
+    };
+
+    /* 跳转到更新的声明地址 */
+    const goToThirdParty = function (privacyUrl) {
+        window.location.replace(privacyUrl);
+    };
+
+    // Expose for the fetch flow below
+    window.showDefaultTerms = showDefaultTerms;
+    window.goToThirdParty = goToThirdParty;
+
+    // 超时兜底：连接被静默丢弃时 fetch 可能永不返回，必须自己设上限后落到本地文案
+    var fallbackTimer = setTimeout(showDefaultTerms, 10000);
+
+    fetch(window.appInformation.apiBase.replace(/\/+$/, '') + '/app?identifier=' + encodeURIComponent(window.appInformation.identifier) + '&device=' + encodeURIComponent(window.device))
+        .then(function (r) { return r.json(); })
+        .then(function (info) {
+            const privacyUrl = info && info.result && info.result.url;
+            if (privacyUrl && (privacyUrl.indexOf('https://') === 0 || privacyUrl.indexOf('http://') === 0)) {
+                clearTimeout(fallbackTimer);
+                return goToThirdParty(privacyUrl);
+            }
+            clearTimeout(fallbackTimer);
+            return showDefaultTerms();
+        })
+        .catch(function () {
+            clearTimeout(fallbackTimer);
+            showDefaultTerms();
+        });
+
+})();
+</script>
+</body>
+</html>
